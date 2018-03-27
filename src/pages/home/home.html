@@ -5,14 +5,345 @@
     </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
+
+  <ion-toolbar no-border-top>
+      <ion-searchbar color="primary"
+                     
+                     placeholder="Search Dairy2Home">
+      </ion-searchbar>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+    <!-- <ion-item> -->
+        <!-- <ion-label>Gender</ion-label>
+        <ion-badge color="secondary">Pasturized</ion-badge> -->
+        <!-- <ion-select >
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select> -->
+      <!-- </ion-item> -->
+   
+      <!-- <ion-searchbar>
+  </ion-searchbar> -->
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card>
+    <img src="assets/amul_milk/amul1.jpeg" style="height: 200px;" />
+    <ion-card-content>
+      <h2 class="card-title">
+        Amul Gold
+      </h2>
+      <p>
+        Amul milk is the most hygenic liquid milk available in the market.
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col width-33>
+        <button ion-button clear small color="danger" (click)="goTo('detail')" >
+         <ion-icon name='star'></ion-icon>
+          Dolore
+        </button>
+      </ion-col>
+      <ion-col width-33>
+        <button ion-button clear small color="danger">
+          <ion-icon name='musical-notes'></ion-icon>
+          Perspi
+        </button>
+      </ion-col>
+      <ion-col width-33>
+        <button ion-button clear small color="danger">
+          <ion-icon name='share-alt'></ion-icon>
+          Magni
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+      <img src="assets/amul_milk/amul2.jpeg" style="height: 200px;"/>
+      <ion-card-content>
+        <h2 class="card-title">
+          Amul Gold
+        </h2>
+        <p>
+          Amul milk is the most hygenic liquid milk available in the market.
+        </p>
+      </ion-card-content>
+      <ion-row no-padding>
+        <ion-col width-33>
+          <button ion-button clear small color="danger" (click)="goTo('detail')" >
+           <ion-icon name='star'></ion-icon>
+            Dolore
+          </button>
+        </ion-col>
+      <ion-col width-33>
+      <button ion-button clear small color="danger">
+      <ion-icon name='musical-notes'></ion-icon>
+      Perspi
+      </button>
+      </ion-col>
+      <ion-col width-33>
+      <button ion-button clear small color="danger">
+      <ion-icon name='share-alt'></ion-icon>
+      Magni
+      </button>
+      </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card>
+        <img src="assets/amul_milk/amul3.jpeg"  />
+        <ion-card-content>
+          <h2 class="card-title">
+            quas quae sunt
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Magni nihil
+            hic vel fugit dignissimos ad natus eaque!
+            Perspiciatis beatae quis doloremque soluta
+            enim ratione laboriosam. Dolore illum,
+            quas quae sunt.
+          </p>
+        </ion-card-content>
+        <ion-row no-padding>
+          <ion-col width-33>
+            <button ion-button clear small color="danger"  (click)="goTo('detail')">
+             <ion-icon name='star'></ion-icon>
+              Dolore
+            </button>
+          </ion-col>
+        <ion-col width-33>
+        <button ion-button clear small color="danger">
+        <ion-icon name='musical-notes'></ion-icon>
+        Perspi
+        </button>
+        </ion-col>
+        <ion-col width-33>
+        <button ion-button clear small color="danger">
+        <ion-icon name='share-alt'></ion-icon>
+        Magni
+        </button>
+        </ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-list>
+         
+          <ion-item >
+            <ion-thumbnail item-left>
+                <img src="assets/amul_milk/amul7.png"  />
+            </ion-thumbnail>
+              
+            <!-- <span item-start class="dot"></span> -->
+            <!-- <ion-label>Test</ion-label> -->
+            <!-- <div width-50> -->
+                <h2>Amul Gold</h2>
+                <P>MRP. 23.00</P>
+                <P>MRP. 23.00</P>
+              <!-- </div> -->
+              <!-- <div width-50> -->
+                  <button  ion-button  item-right color="secondary" >
+                      Add
+                      </button>
+                <!-- </div> -->
+            
+          
+          </ion-item>
+
+          <ion-item >
+              <ion-thumbnail item-left>
+                  <img src="assets/amul_milk/amul7.png"  />
+              </ion-thumbnail>
+                
+              <!-- <span item-start class="dot"></span> -->
+              <!-- <ion-label>Test</ion-label> -->
+              <!-- <div width-50> -->
+                  <h2>Amul Gold</h2>
+                  <P>MRP. 23.00</P>
+                  <P>MRP. 23.00</P>
+                <!-- </div> -->
+                <!-- <div width-50> -->
+                    <button  ion-button  item-right color="secondary" >
+                        Add
+                        </button>
+                  <!-- </div> -->
+              
+            
+            </ion-item>
+
+            <ion-item >
+                <ion-thumbnail item-left>
+                    <img src="assets/amul_milk/amul7.png"  />
+                </ion-thumbnail>
+                  
+                <!-- <span item-start class="dot"></span> -->
+                <!-- <ion-label>Test</ion-label> -->
+                <!-- <div width-50> -->
+                    <h2>Amul Gold</h2>
+                    <P>MRP. 23.00</P>
+                    <P>MRP. 23.00</P>
+                  <!-- </div> -->
+                  <!-- <div width-50> -->
+                      <button  ion-button  item-right color="secondary" >
+                          Add
+                          </button>
+                    <!-- </div> -->
+                
+              
+              </ion-item>
+
+              <ion-item >
+                  <ion-thumbnail item-left>
+                      <img src="assets/amul_milk/amul7.png"  />
+                  </ion-thumbnail>
+                    
+                  <!-- <span item-start class="dot"></span> -->
+                  <!-- <ion-label>Test</ion-label> -->
+                  <!-- <div width-50> -->
+                      <h2>Amul Gold</h2>
+                      <P>MRP. 23.00</P>
+                      <P>MRP. 23.00</P>
+                    <!-- </div> -->
+                    <!-- <div width-50> -->
+                        <button  ion-button  item-right color="secondary" >
+                            Add
+                            </button>
+                      <!-- </div> -->
+                  
+                
+                </ion-item>
+
+                <ion-item >
+                    <ion-thumbnail item-left>
+                        <img src="assets/amul_milk/amul7.png"  />
+                    </ion-thumbnail>
+                      
+                    <!-- <span item-start class="dot"></span> -->
+                    <!-- <ion-label>Test</ion-label> -->
+                    <!-- <div width-50> -->
+                        <h2>Amul Gold HOmogenised Standardised Milk</h2>
+                        <p></p>
+                        <P>MRP. 23.00</P>
+                        <!-- <P>MRP. 23.00</P> -->
+                      <!-- </div> -->
+                      <!-- <div width-50> -->
+                        <ion-badge color="default" >Homogenised</ion-badge>
+                        <ion-badge color="default" >Standardised</ion-badge>
+                        <div>
+                            <button  ion-button  item-right color="secondary" >
+                                -
+                                </button>
+                                  2
+                                <button  ion-button  item-right color="secondary" >
+                                    +
+                                    </button>
+                        </div>
+                         
+                        <!-- </div> -->
+                    
+                  
+                  </ion-item>
+        </ion-list>
+
+        <div class="list">
+            <div class="item">
+              <h2>Jeanette Fletcher</h2>
+              <p class="text-grey-500">jeanette.fletcher15@example.com</p>
+            </div>
+            <div class="item">
+              <h2>Chad Black</h2>
+              <p class="text-grey-500">chad.black48@example.com</p>
+            </div>
+            <div class="item">
+              <h2>Carter hudson</h2>
+              <p class="text-grey-500">carter.hudson17@example.com</p>
+            </div>
+            <div class="item">
+              <h2>Vanessa brown</h2>
+              <p class="text-grey-500">vanessa.brown96@example.com</p>
+            </div>
+          </div>
+
+
+          <div class="list">
+              <div class="item">
+                <div class="left">
+                  <img class="avatar circle" src="assets/amul_milk/amul7.png">
+                </div>
+                <h2>Jeanette Fletcher</h2>
+                <p class="text-grey-500">jeanette.fletcher15@example.com</p>
+                <div class="right text-grey text-small align-right">
+                  <i class="icon ion-android-time"></i> 2h
+                </div>
+              </div>
+              <div class="item">
+                <div class="right">
+                  <img class="avatar radius" src="assets/amul_milk/amul7.png">
+                </div>
+                <h2>Chad Black</h2>
+                <p class="text-grey-500">chad.black48@example.com</p>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <i class="icon ion-home"></i>
+                </div>
+                <h2 class="text-green text-strong">Carter hudson</h2>
+                <p class="text-grey-500">carter.hudson17@example.com</p>
+                <div class="right align-right text-small">
+                  <ul>
+                    <li class="text-green text-strong">2:30PM</li>
+                    <li class=" text-grey-300">30 minutes ago</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <div class="icon-circle text-red border-red">
+                    <i class="icon ion-home"></i>
+                  </div>
+                </div>
+                <h2>Vanessa brown</h2>
+                <p class="text-grey-500">vanessa.brown96@example.com</p>
+              </div>
+            </div>
+
+            <body class="padding pink-50 has-header has-footer">
+                <div class="header pink">
+                  <div class="left">
+                    <button class="icon ion-navicon"></button>
+                  </div>
+                  <h1>Profile</h1>
+                </div>
+                <div class="footer pink shadow tab">
+                  <button class="icon ion-android-person active" onclick="openTab('myTabAbout')">About</button>
+                  <button class="icon ion-android-list" onclick="openTab('myTabEvents')">Events</button>
+                  <button class="icon ion-android-chat" onclick="openTab('myTabMessages')">Messages</button>
+                  <button class="icon ion-android-people" onclick="openTab('myTabGroups')">Groups</button>
+                </div>
+                <div class="tab-content active" id="myTabAbout">
+                  <h2 class="text-strong padding text-pink">Tab About</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div class="tab-content" id="myTabEvents">
+                  <h2 class="text-strong padding text-pink">Tab Events</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div class="tab-content" id="myTabMessages">
+                  <h2 class="text-strong padding text-pink">Tab Messages</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div class="tab-content" id="myTabGroups">
+                  <h2 class="text-strong padding text-pink">Tab Groups</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </body>
 </ion-content>
